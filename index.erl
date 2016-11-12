@@ -8,7 +8,7 @@ data(_) ->
       methodology    => {markdown, "METHODOLOGY.md"},
       patterns       => {markdown, "patterns/*.md"}}.
 
-site(Data) ->
+site([Data]) ->
     #{"site/index.html"        => {template, "template/index.html"},
       "site/methodology.html"  => {template, "template/methodology.html"},
       "site/patterns.html"     => {template, "template/patterns.html"},
